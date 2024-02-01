@@ -1,0 +1,28 @@
+//
+// Main 
+//
+
+body {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% $app-page-bg-image-height;
+}
+
+@include color-mode(light) {
+	body:not(.app-blank) {
+		background-image: url('../media/misc/page-bg.jpg');
+	}
+}
+
+@include color-mode(dark) {
+	body:not(.app-blank) {
+		background-image: url('../media/misc/page-bg.jpg');
+	}
+}
+
+// Mobile mode
+@include media-breakpoint-down(lg) {
+	body {
+		background-size: 100% $app-page-bg-image-height-mobile;
+	}
+}
