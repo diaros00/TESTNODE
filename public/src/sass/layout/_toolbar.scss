@@ -1,0 +1,14 @@
+//
+// Toolbar
+//
+
+.app-toolbar {
+	[data-kt-app-toolbar-sticky="on"] & {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		
+		.btn-custom {
+			background-color: $light !important;
+		}
+	}	
+}
