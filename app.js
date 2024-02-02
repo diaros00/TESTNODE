@@ -19,6 +19,12 @@ app.set('view engine', 'ejs')
 filesRounter.route('/').get((req, res) => {
   res.render('files', {
     username: 'Chatraporn.Yon',
+    sex: 'male',
+    file: [
+      { filename: 'file1', size: '20mb' },
+      { filename: 'file2', size: '100mb' },
+      { filename: 'file3', size: '40mb' },
+    ],
   })
 })
 
